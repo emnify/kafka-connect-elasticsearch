@@ -12,7 +12,7 @@ metadata:
     jenkins/build: emb-m2
 spec:
   podAffinity:
-    preferredDuringSchedulingIgnoredDuringExecution:
+    requiredDuringSchedulingIgnoredDuringExecution:
     - labelSelector:
         matchExpressions:
         - key: jenkins/build
